@@ -41,12 +41,12 @@ which creates a **circular dependency**...
 
 ### Quick notes about stuff I've tried:
 
-Switch to "Setup Stores" instead of "Option Stores"?
-→ Same error...
+Switch to "Setup Stores" instead of "Option Stores"?  
+→ Same error...  
 → Would be a bit time-consuming and error-prone in my current project where we are not yet comfortable with Composition API
 
-Stop using mapState and switch to setup() with storeToRefs
-→ Probably our best option but still requires some effort
+Stop using mapState and switch to setup() with storeToRefs  
+→ Probably our best option but still requires some effort  
 → But still some console error at HMR
 
 Never import and use your router in your stores?
@@ -54,24 +54,24 @@ Never import and use your router in your stores?
 Have all components being lazy-loading in your router?
 
 
-What does not work:
+**What does not work:**
 
-Options API
-Option store or Setup store
+Options API  
+Option store or Setup store  
 Use of mapState
 
-Working with HMR console errors:
+**Working with HMR console errors:**
 
-Options API
-Option store or Setup store
+Options API  
+Option store or Setup store  
 Use of storeToRefs
 
-CompositionAPI <script setup>
-Option store or Setup store
+CompositionAPI <script setup>  
+Option store or Setup store  
 No mapState nor storeToRefs
 
-Working well:
+**Working well:**
 
-No router import in store
-OR
+No router import in store  
+_OR_  
 Lazy-load HomeView component from router
